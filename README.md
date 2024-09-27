@@ -1,7 +1,1 @@
-# To Run This Project Locally, Make Clone & Run Command `npm i`
-
-# After Depencies Have Been Installed
-
-# Run Command `npm start` To Run Locally
-
-
+#used reactJS,react router dom,tailwindcss,useContext and fakestoreAPI to make this ecommerce store
