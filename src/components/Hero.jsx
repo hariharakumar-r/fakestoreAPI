@@ -8,17 +8,17 @@ const Hero = () => {
         {/* text */}
         <div className="flex flex-col justify-center lg:pl-80">
           {/* pretitle */}
-          <div className="flex items-center font-semibold uppercase ">
-            <div className="w-10 h-[2px] bg-red-500 mr-3"></div>New Trend
+          <div className="flex items-center font-bold uppercase text-black">
+            <div className="w-10 h-[5px] bg-red-500 mr-3"></div>Classy Picks
           </div>
           {/* title */}
-          <h1 className="text-[70px] leading-[1.1] font-light mb-4">
-            AUTMN SALE STYLISH <br />
-            <span className="font-semibold ">WOMENS</span>
+          <h1 className="text-[70px] leading-[1.1] font-extrabold mb-4 text-red-500">
+            AUTUMN PRICE DROP<br />
+            <span className="font-semibold text-white">WOMENS APPAREL</span>
           </h1>
           <Link
             to={"/"}
-            className="self-start font-semibold uppercase border-b-2 border-primary"
+            className="self-start font-bold text-2xl text-slate-100 uppercase border-b-2 border-primary"
           >
             Discover More
           </Link>

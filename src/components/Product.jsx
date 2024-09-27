@@ -9,7 +9,7 @@ const Product = ({ product }) => {
   return (
     <div>
       <div className="border border-[#e4e4e4] h-[300px] mb-4 relative overflow-hidden group transition">
-        <div className="flex items-center justify-center w-full h-full ">
+        <div className="flex items-center justify-center w-full h-full">
           <div className="w-[200px] mx-auto flex justify-center items-center">
             <img
               className="max-h-[160px] group-hover:scale-125 transition duration-300"
@@ -18,6 +18,7 @@ const Product = ({ product }) => {
             />
           </div>
         </div>
+        {/* add button on cart */}
         <div className="absolute flex flex-col items-center justify-center p-2 transition-all duration-300 opacity-0 -right-11 top-6 group-hover:right-5 gap-y-2 group-hover:opacity-100">
           <button onClick={() => addToCart(product, id)}>
             <div className="flex items-center justify-center w-12 h-12 text-white bg-red-500">
@@ -28,6 +29,7 @@ const Product = ({ product }) => {
             to={`/product/${id}`}
             className="flex items-center justify-center w-12 h-12 bg-white text-primary drop-shadow-xl"
           >
+            {/* eye icon for view product- it displays the product name details & and price of the product */}
             <BsEyeFill />
           </Link>
         </div>

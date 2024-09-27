@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { IoMdArrowForward } from "react-icons/io";
 import { FiTrash2 } from "react-icons/fi";
-import CartItem from "../Components/CartItem";
+import CartItem from "../components/CartItem";
 import { SidebarContext } from "../Context/SidebarContext";
 import { CartContext } from "../Context/CartContext";
 
@@ -36,26 +36,26 @@ const SideBar = () => {
           {/* total */}
 
           <div className="font-semibold uppercase">
-            <span className="mr-2 ">Total:</span>${" "}
-            {parseFloat(total).toFixed(2)}
+            <span className="mr-2 ">Total with 10% discount:</span>${" "}
+            {parseFloat(total-(1%total)).toFixed(2)}
           </div>
           {/* clear cart */}
           <div
             onClick={() => clearCart()}
-            className="flex items-center justify-center w-12 h-12 py-4 text-xl text-white bg-red-500 cursor-pointer "
+            className="flex items-center rounded-xl justify-center w-12 h-12 py-4 text-xl text-white bg-red-500 cursor-pointer "
           >
             <FiTrash2 />
           </div>
         </div>
         <Link
           to={"/"}
-          className="flex items-center justify-center w-full p-4 font-medium bg-gray-200 text-primary"
+          className="flex items-center justify-center w-28 rounded-2xl p-4  font-medium bg-gray-200 text-primary"
         >
           View Cart
         </Link>
         <Link
           to={"/"}
-          className="flex items-center justify-center w-full p-4 font-medium text-white bg-primary"
+          className="flex items-center justify-center w-28 p-4 rounded-2xl font-medium text-white bg-primary"
         >
           Checkout
         </Link>
